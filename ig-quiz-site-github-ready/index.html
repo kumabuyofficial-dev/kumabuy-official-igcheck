@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>免費 IG 帳號檢測｜找出真正卡住的原因</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="stage-grid" aria-hidden="true"></div>
+    <div class="stage-halo" aria-hidden="true"></div>
+    <div class="stage-scan" aria-hidden="true"></div>
+    <main>
+      <header class="launch-bar" aria-label="頁首資訊">
+        <span>KUMABUY LAB</span>
+        <span>IG CHECK LAUNCH</span>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FREE IG ACCOUNT DIAGNOSTIC</p>
+          <h1>找出你的 IG，真正卡住的原因？</h1>
+          <p class="lede">
+            貼上你的 IG 帳號網址，立即查看最優先檢查的卡點是內容吸引力、帳號定位，還是流量轉換。
+          </p>
+          <div class="hero-badges" aria-label="測驗特色">
+            <span>30 秒完成</span>
+            <span>立即看到結果</span>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="免費 IG 帳號檢測器畫面示意">
+          <div class="device-frame">
+            <div class="device-browser">
+              <span></span>
+              <b>kumabuy-official-igcheck-v4.netlify.app</b>
+            </div>
+            <div class="device-screen">
+              <p>免費 IG 帳號檢測</p>
+              <h2>貼上你的 IG 帳號網址</h2>
+              <div class="device-input">@kumabuy.official</div>
+              <div class="scan-card">
+                <span></span>
+                <strong>AI 快速初篩中</strong>
+                <small>內容 / 定位 / 流量轉換</small>
+              </div>
+              <div class="mini-result">
+                <b>定位</b>
+                <em>優先檢查</em>
+              </div>
+            </div>
+          </div>
+          <div class="hud-stack" aria-hidden="true">
+            <span><small>INPUT</small>IG 網址</span>
+            <span><small>SCAN</small>公開搜尋</span>
+            <span><small>OUTPUT</small>診斷結果</span>
+          </div>
+        </figure>
+      </section>
+
+      <section class="quiz-shell" aria-label="IG 帳號檢測表單">
+        <aside class="side-panel">
+          <p class="side-label">診斷分類</p>
+          <div class="diagnosis-list">
+            <span><b>1</b> 內容</span>
+            <span><b>2</b> 定位</span>
+            <span><b>3</b> 流量轉換</span>
+          </div>
+          <p>
+            貼上完整 IG 帳號連結後，系統會先確認公開網頁是否能搜尋到此帳號；若補上帳號首頁、Reels 或貼文截圖，會把截圖裡看得到的公開數字與文字一起納入判斷。
+          </p>
+        </aside>
+
+        <form id="quizForm" class="quiz-card" name="ig-account-check" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html" enctype="multipart/form-data">
+          <div class="scan-overlay" aria-hidden="true">
+            <div class="scan-panel">
+              <span>AI SCANNING</span>
+              <b>正在讀取帳號訊號</b>
+              <i></i>
+            </div>
+            <div class="scan-beam"></div>
+          </div>
+          <input type="hidden" name="form-name" value="ig-account-check" />
+          <p class="hidden">
+            <label>請不要填這個欄位<input name="bot-field" /></label>
+          </p>
+
+          <div class="form-heading">
+            <p class="eyebrow">開始檢測</p>
+            <h2>貼上你的 IG 帳號網址</h2>
+          </div>
+
+          <div class="instant-check">
+            <label>
+              IG 帳號網址
+              <input id="igUrl" name="ig_url" type="text" placeholder="https://www.instagram.com/yourname/" required />
+            </label>
+            <button type="button" id="previewBtn">立即檢測</button>
+          </div>
+
+          <div class="quick-note">
+            <span>請貼上完整 IG 帳號連結</span>
+            <span>會先確認公開網頁是否能搜尋到此帳號</span>
+          </div>
+
+          <section class="screenshot-check" aria-label="上傳 IG 截圖輔助分析">
+            <div class="screenshot-copy">
+              <p class="eyebrow">SCREENSHOT SIGNALS</p>
+              <h3>想讓結果更貼近實際狀況，可以補上截圖</h3>
+              <p>
+                建議上傳帳號首頁、Reels 截圖與貼文截圖，畫面需看得到粉絲數、觀看數或互動數字。
+              </p>
+            </div>
+            <div class="screenshot-grid">
+              <label class="screenshot-drop">
+                <span>帳號首頁截圖</span>
+                <small>需看得到簡介、粉絲數、貼文數</small>
+                <input id="profileScreenshot" name="profile_screenshot" data-screenshot-input data-screenshot-kind="profile" type="file" accept="image/*" />
+              </label>
+              <label class="screenshot-drop">
+                <span>Reels 截圖</span>
+                <small>需看得到觀看數</small>
+                <input id="reelsScreenshot" name="reels_screenshot" data-screenshot-input data-screenshot-kind="reels" type="file" accept="image/*" />
+              </label>
+              <label class="screenshot-drop">
+                <span>貼文截圖</span>
+                <small>需看得到觀看數或互動</small>
+                <input id="postScreenshot" name="post_screenshot" data-screenshot-input data-screenshot-kind="post" type="file" accept="image/*" />
+              </label>
+            </div>
+            <div id="ocrStatus" class="ocr-status">尚未上傳截圖。系統會先確認 IG 帳號是否有公開搜尋結果。</div>
+          </section>
+
+          <input type="hidden" name="instagram" id="instagram" />
+          <input type="hidden" name="display_name" id="display_name" />
+          <input type="hidden" name="content_score" id="content_score" />
+          <input type="hidden" name="positioning_score" id="positioning_score" />
+          <input type="hidden" name="conversion_score" id="conversion_score" />
+          <input type="hidden" name="diagnosis" id="diagnosis" />
+          <input type="hidden" name="diagnosis_summary" id="diagnosis_summary" />
+          <input type="hidden" name="check_basis" id="check_basis" />
+          <input type="hidden" name="industry_result" id="industry_result" />
+          <input type="hidden" name="follower_tier" id="follower_tier" />
+          <input type="hidden" name="ocr_text" id="ocr_text" />
+          <input type="hidden" name="ocr_metrics" id="ocr_metrics" />
+
+          <aside id="result" class="result" aria-live="polite">
+            <p class="result-kicker">你的診斷</p>
+            <h2>輸入 IG 網址後，這裡會顯示你的結果</h2>
+            <p>若有上傳截圖，系統會把截圖上看得到的粉絲數、觀看數、簡介與行動引導一起納入初步判斷。</p>
+          </aside>
+
+          <div class="deep-auth">
+            <div>
+              <p class="eyebrow">PUBLIC FREE VERSION</p>
+              <p>若想更完整評估與分析帳號，可以預約 1 對 1 深度檢測。</p>
+            </div>
+            <a class="auth-button" href="https://lin.ee/usdsl2r">深度檢測了解更多</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+    <!-- deploy-stamp: clean-text-v4 -->
+  </body>
+</html>
