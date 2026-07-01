@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>熊熊跨麥｜Reels 短影音需求評估</title>
+    <meta
+      name="description"
+      content="填寫 Reels 短影音需求，讓熊熊跨麥了解你的品牌、帳號現況、影片目標、預算與時程。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-notice">案件量持續增加，想製作 Reels 的品牌／店家／個人，歡迎先填寫需求</div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到頁首">
+        <span class="brand-mark">熊</span>
+        <span>
+          <strong>熊熊跨麥</strong>
+          <small>自媒體行銷</small>
+        </span>
+      </a>
+      <nav aria-label="主要導覽">
+        <a href="#brand-info">服務需求</a>
+        <a href="#video-needs">影片目標</a>
+        <a href="#budget-time">預算時程</a>
+        <a href="#brief-form">填寫表單</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <p class="section-kicker"><span></span> REELS BRIEF FORM</p>
+          <h1>
+            <span class="title-line title-line-main">Reels<span class="title-cjk">短影音</span></span>
+            <span class="title-line">需求評估表</span>
+          </h1>
+          <p class="hero-text">
+            讓我們先了解你的品牌現況、影片目標、參考素材與預算時程，後續才能規劃更貼近你帳號的短影音內容。
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#brief-form">開始填寫</a>
+            <a class="btn ghost" href="#video-needs">查看填寫重點 ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="熊熊跨麥實戰數據">
+        <div>
+          <strong><span class="stat-number" data-count="20">0</span><span class="stat-unit">+</span></strong>
+          <span>累積合作品牌</span>
+        </div>
+        <div>
+          <strong><span class="stat-number" data-count="2000">0</span><span class="stat-unit">萬+</span></strong>
+          <span>累積流量曝光</span>
+        </div>
+        <div>
+          <strong><span class="stat-number" data-count="24">0</span><span class="stat-unit">hr</span></strong>
+          <span>快速回覆</span>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <p class="section-kicker"><span></span> 我們會看什麼</p>
+        <h2>先釐清方向<br />再規劃<span>短影音內容</span></h2>
+        <p>
+          這份表單會協助我們了解你的帳號現況、影片目標與素材方向，讓後續 Reels 規劃更貼近你的品牌。
+        </p>
+        <div class="service-grid">
+          <article>
+            <small>01</small>
+            <h3>品牌與受眾</h3>
+            <p>理解你的產品、服務、客群與目前帳號狀態。</p>
+          </article>
+          <article>
+            <small>02</small>
+            <h3>影片目標</h3>
+            <p>釐清這次 Reels 主要是要曝光、詢問、信任感或成交。</p>
+          </article>
+          <article>
+            <small>03</small>
+            <h3>素材與參考</h3>
+            <p>可上傳品牌資料，也可以貼上參考連結讓方向更準。</p>
+          </article>
+          <article>
+            <small>04</small>
+            <h3>預算與時程</h3>
+            <p>確認合作規模與交件時間，方便後續快速評估。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="form-wrap" id="brief-form">
+        <aside class="progress-card">
+          <p class="section-kicker"><span></span> 填寫流程</p>
+          <ol>
+            <li><a class="active" href="#basic-info">基本資料</a></li>
+            <li><a href="#brand-info">帳號與品牌</a></li>
+            <li><a href="#video-needs">影片需求</a></li>
+            <li><a href="#references">參考資料</a></li>
+            <li><a href="#budget-time">預算時程</a></li>
+          </ol>
+        </aside>
+
+        <form
+          name="reels-brief"
+          method="POST"
+          action="/success.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          enctype="multipart/form-data"
+          class="brief-form"
+        >
+          <input type="hidden" name="form-name" value="reels-brief" />
+          <p class="hidden">
+            <label>不要填寫這欄 <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-head">
+            <p class="section-kicker"><span></span> START BRIEF</p>
+            <h2>先讓我們知道，你想讓 Reels 幫你做到什麼</h2>
+            <p>不用寫得很專業，只要照著問題填寫。越清楚的品牌資訊、帳號連結與參考素材，越能幫我們判斷適合你的內容切入點。</p>
+          </div>
+
+          <fieldset id="basic-info">
+            <legend>基本資料</legend>
+            <div class="grid two">
+              <label>
+                你的名字或暱稱 <span>*</span>
+                <input type="text" name="name" required placeholder="例如：小編 Amy" />
+              </label>
+              <label>
+                品牌、店家或個人名稱 <span>*</span>
+                <input type="text" name="brand_name" required placeholder="例如：熊熊跨麥 / 個人創作者名稱" />
+              </label>
+              <label>
+                聯絡方式 <span>*</span>
+                <input type="text" name="contact" required placeholder="LINE ID / IG / Email" />
+              </label>
+              <label>
+                IG 帳號或官網 <span>*</span>
+                <input type="text" name="instagram" required placeholder="https://www.instagram.com/yourname" />
+              </label>
+              <label>
+                你比較接近哪一種身份？
+                <select name="client_type">
+                  <option value="">請選擇</option>
+                  <option>品牌窗口</option>
+                  <option>店家／工作室</option>
+                  <option>個人創作者</option>
+                  <option>企業行銷窗口</option>
+                  <option>其他</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset id="brand-info">
+            <legend>服務方式與素材狀況</legend>
+            <label>
+              你主要的產品、服務或內容主題是什麼？ <span>*</span>
+              <textarea
+                name="service_intro"
+                required
+                rows="4"
+                placeholder="例如：美業課程、餐飲店、房仲服務、個人品牌、知識型內容、才藝教學..."
+              ></textarea>
+            </label>
+            <div class="grid two">
+              <label class="field-control">
+                <span class="field-label">你想洽詢哪一種 Reels 服務？ <span>*</span></span>
+                <select name="service_type" required>
+                  <option value="">請選擇</option>
+                  <option>純剪輯：已有毛片素材，需要整理成 Reels</option>
+                  <option>拍攝＋剪輯：需要協助拍攝與後製</option>
+                  <option>腳本＋拍攝＋剪輯：需要從內容腳本到成片完整協助</option>
+                  <option>長期固定合作：希望固定週期製作多支 Reels</option>
+                  <option>想先討論適合哪種方式</option>
+                </select>
+              </label>
+              <label class="field-control">
+                <span class="field-label">目前素材準備到哪裡？</span>
+                <select name="material_status">
+                  <option value="">請選擇</option>
+                  <option>已有毛片素材</option>
+                  <option>已有部分素材，還需要整理方向</option>
+                  <option>還沒有素材，需要協助拍攝</option>
+                  <option>需要先討論內容腳本</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              若已有素材，單支影片的毛片總長大約多久？
+              <div class="choice-row">
+                <label><input type="radio" name="raw_length" value="10 分鐘內" /> 10 分鐘內</label>
+                <label><input type="radio" name="raw_length" value="20 分鐘內" /> 20 分鐘內</label>
+                <label><input type="radio" name="raw_length" value="30 分鐘內" /> 30 分鐘內</label>
+                <label><input type="radio" name="raw_length" value="尚未確定" /> 尚未確定</label>
+              </div>
+            </label>
+            <label>
+              是否希望加入 AI 輔助示意畫面或特殊視覺片段？
+              <select name="ai_visual_need">
+                <option value="">請選擇</option>
+                <option>不需要，主要以真實素材剪輯為主</option>
+                <option>想加入少量 AI 示意畫面，可另外評估</option>
+                <option>需要較多特殊視覺，想先討論可行性</option>
+                <option>不確定，想聽建議</option>
+              </select>
+            </label>
+            <p class="field-note">若素材量較多、需 AI 示意畫面、特殊視覺或額外拍攝安排，會依實際需求另外評估。</p>
+          </fieldset>
+
+          <fieldset id="video-needs">
+            <legend>影片需求</legend>
+            <p class="field-note">請先選 1-3 個最重要的目標，讓我們判斷影片要優先解決什麼。</p>
+            <div class="checkbox-grid compact" data-max-check="3">
+              <label><input type="checkbox" name="video_goal" value="增加曝光" /> 增加曝光</label>
+              <label><input type="checkbox" name="video_goal" value="提升詢問" /> 提升詢問</label>
+              <label><input type="checkbox" name="video_goal" value="促進預約或成交" /> 促進預約或成交</label>
+              <label><input type="checkbox" name="video_goal" value="建立品牌信任感" /> 建立品牌信任感</label>
+              <label><input type="checkbox" name="video_goal" value="整理內容主軸" /> 整理內容主軸</label>
+              <label><input type="checkbox" name="video_goal" value="改善影片節奏" /> 改善影片節奏</label>
+              <label><input type="checkbox" name="video_goal" value="活動或新品宣傳" /> 活動或新品宣傳</label>
+              <label><input type="checkbox" name="video_goal" value="其他" /> 其他</label>
+            </div>
+
+            <div class="grid one section-gap">
+              <label>
+                你喜歡或不喜歡的影片風格
+                <textarea
+                  name="video_style"
+                  rows="4"
+                  placeholder="例如：自然聊天感、專業乾淨、活潑有梗、知識型、案例型、開箱型，或不要太浮誇..."
+                ></textarea>
+              </label>
+              <label>
+                字幕、品牌語氣或剪輯上有沒有特別習慣？
+                <textarea
+                  name="subtitle_style"
+                  rows="3"
+                  placeholder="例如：字幕要正式、可以口語、有固定品牌用字、不要太浮誇、需要保留專業語氣。"
+                ></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset id="references">
+            <legend>參考資料</legend>
+            <p class="field-note">可以上傳檔案，也可以貼上連結；若資料較多，建議用雲端資料夾整理。</p>
+
+            <label>
+              參考影片、帳號、作品或素材連結
+              <textarea
+                name="reference_links"
+                rows="3"
+                placeholder="可貼 IG 貼文、Reels、官網、雲端資料夾、Canva、圖片或影片連結。"
+              ></textarea>
+            </label>
+
+            <div class="reference-actions">
+              <label>
+                選擇檔案
+                <input type="file" name="attachment" accept="image/*,video/*,.pdf,.doc,.docx" />
+              </label>
+              <div class="reference-help">
+                <strong>補充資料整理方式</strong>
+                <p>若為不同主題或不同品牌素材，建議先用資料夾分類，後續溝通會更快。</p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset id="budget-time">
+            <legend>預算時程</legend>
+            <div class="grid two">
+              <label>
+                這次預計需要幾支 Reels？
+                <select name="video_count">
+                  <option value="">請選擇</option>
+                  <option>1 支</option>
+                  <option>2 - 3 支</option>
+                  <option>4 - 6 支</option>
+                  <option>長期配合</option>
+                  <option>還不確定，想先討論</option>
+                </select>
+              </label>
+              <label>
+                希望什麼時候完成？
+                <select name="timeline">
+                  <option value="">請選擇</option>
+                  <option>收到完整素材後 2～5 個工作天內</option>
+                  <option>一週內</option>
+                  <option>一個月內</option>
+                  <option>可討論</option>
+                </select>
+              </label>
+              <label class="field-control">
+                <span class="field-label">目前預算區間</span>
+                <select name="budget">
+                  <option value="">請選擇</option>
+                  <option>NT$1,200～2,000：單支純剪輯</option>
+                  <option>NT$3,500～5,000：單支完整製作</option>
+                  <option>NT$12,000～30,000：多支固定合作</option>
+                  <option>需拍攝或特殊視覺，想先評估</option>
+                  <option>想先了解報價</option>
+                </select>
+              </label>
+              <label class="field-control">
+                <span class="field-label">拍攝地點或服務區域</span>
+                <input type="text" name="location" placeholder="例如：台北 / 台中 / 線上 / 可討論" />
+              </label>
+            </div>
+            <label>
+              其他想補充的需求
+              <textarea
+                name="notes"
+                rows="5"
+                placeholder="可以補充品牌目前狀況、想避免的風格、需要協助的地方、活動時間、合作限制等。"
+              ></textarea>
+            </label>
+            <p class="field-note">一般交件時間為收到完整素材後 2～5 個工作天，實際仍依素材量與排程狀況安排。每支影片包含 3 次免費修改，若有修改需求，建議統整後一次提供，能讓溝通與作業效率更高。</p>
+          </fieldset>
+
+          <div class="submit-bar">
+            <p>送出後，我們會依照你的品牌狀況、短影音目標與素材方向，評估適合的 Reels 製作方式。</p>
+            <button type="submit">送出需求評估</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
