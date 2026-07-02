@@ -1329,3 +1329,22 @@ button:disabled {
 #references .reference-actions {
   margin-top: 36px !important;
 }
+
+/* Compact basic-info fields: keep required marks on the label line. */
+#basic .grid.two {
+  row-gap: 30px !important;
+  column-gap: 36px !important;
+}
+
+#basic .grid.two > label {
+  grid-template-rows: auto 64px !important;
+  row-gap: 12px !important;
+}
+
+#basic .field-label {
+  height: auto !important;
+  min-height: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
