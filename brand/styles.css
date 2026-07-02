@@ -860,3 +860,14 @@ fieldset > legend + .choice-grid {
     grid-template-columns: 1fr;
   }
 }
+
+/* Final CTA color alignment */
+.submit-card button {
+  background: #10b8d4 !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 45px rgba(16, 184, 212, 0.24) !important;
+}
+
+.submit-card button:hover {
+  background: #18c7e5 !important;
+}
